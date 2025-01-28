@@ -1,7 +1,14 @@
 # D2F
 Welcome to D2F, a conceptual framework that identifies and categorises the aspects of real-world planning domains in varying levels of granularity. D2F is developed with the ambition to provide guidance to knowledge engineers and software engineers in the process of designing, identifying, and categorising realistic and relevant aspects that characterise real-world application domains and are crucial to the development of AI planning systems. The conceptual framework consists of seven main categories of realistic aspects and seven levels of granularity across these levels.
 
+
 ## The Seven Categories and their Subcategories
+
+<p align="center">
+  <img width="600" height="350" src="https://github.com/user-attachments/assets/7ba8de5a-fa27-4fb0-bdd0-be4190490847")
+>
+</p>
+
 
 **Objectives**
 
