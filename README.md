@@ -1,5 +1,7 @@
 # D2F
-Welcome to D2F, a conceptual framework that identifies and categorises the aspects of real-world planning domains in varying levels of granularity. D2F is developed with the ambition to provide guidance to knowledge engineers and software engineers in the process of designing, identifying, and categorising realistic and relevant aspects that characterise real-world application domains and are crucial to the development of AI planning systems. The conceptual framework consists of seven main categories of realistic aspects and seven levels of granularity across these levels.
+Welcome to D2F, a conceptual framework that identifies and categorises the aspects of real-world planning domains in varying levels of granularity. D2F is developed with the ambition to provide guidance to knowledge engineers and software engineers in the process of designing, identifying, and categorising realistic and relevant aspects that characterise real-world application domains and are crucial to the development of AI planning systems in all phases [2]. The conceptual framework organises the realistic aspects into seven main categories and seven levels of granularity across these levels with the relations between them.
+
+D2F conceptualises planning domains' realism, provides a common and inclusive notion of AI domain model realism, drives the development of AI planning techniques, can improve the applicability of AI planning, and offers means for comparing different AI planning systems.
 
 
 ## The Seven Categories and their Subcategories
@@ -16,7 +18,7 @@ Categorised by Types (Soft Goals, i.e., Preferences or Hard Goals, i.e., Request
 
 **Tasks**
 
- Divided into Complexity and Properties of Relations. Complexity distinguishes between Actions (simple, direct tasks) and Complex Tasks (requiring refinement into subtasks). Properties of Relations include Abstraction Levels (tasks at different refinement levels), Structured Causality (causal links between tasks), Recursion (tasks refined iteratively), Alternatives (multiple ways to achieve a task), and Conditions (requirements for specific task refinements). These properties define how tasks interact and are refined to achieve domain-specific goals.
+ Divided into Complexity and Properties of Relations. Complexity differentiates between Actions (simple, direct tasks) and Complex Tasks (requiring refinement into subtasks). Properties of Relations include Abstraction Levels (different refinement levels), Structured Causality (causal links between tasks), Recursion (iterative task refinement), Alternatives (multiple ways to achieve a task), and Conditions (requirements for specific refinements). These properties define how tasks interact and evolve to achieve domain-specific goals.
 
 **Quantities**
 
@@ -24,30 +26,34 @@ Classified by Type and Computation. Types include Resources (limits on consumpti
 
 **Determinism**
 
-The fourth high-level category addresses whether a planning domain is Deterministic or Non-deterministic. In Deterministic domains, conditions are Totally Observable, actions have Predefined Consequences and Costs, and outcomes are predictable. In contrast, Non-deterministic domains are classified by the Source, Randomness, and Consequences of non-determinism. Sources can be Internal (e.g., agent malfunctions) or External (e.g., environmental variability). Randomness can be Regular (frequent, predictable variations) or Totally Random (unpredictable events). Consequences include Partial Observability (limited knowledge of conditions) and Action Contingencies, such as unpredictable Effects or Costs of actions. Non-determinism introduces Risk (known probabilities) or Uncertainty (unknown probabilities), impacting decision-making.
+Planning domains are categorised into Deterministic or Non-deterministic. In deterministic domains, conditions are fully observable, actions have predefined consequences and costs, and outcomes are predictable. Non-deterministic domains vary based on their Source, Randomness, and Consequences. Sources can be Internal (e.g., agent malfunctions) or External (e.g., environmental variability). Randomness can be Regular (predictable patterns) or Totally Random (unpredictable events). Consequences include Partial Observability (limited knowledge of conditions) and Action Contingencies (uncertain effects or costs). Non-determinism introduces Risk (known probabilities) or Uncertainty (unknown probabilities), influencing decision-making.
 
 **Agents**
 
-classified into Human Agents (e.g., building occupants) and Components. Components are further categorized by their Type (e.g., devices, robots, or software components) and Controllability (controllable or uncontrollable). Controllable components can be directly managed, while uncontrollable components depend on external factors. In domains with risk and uncertainty, agents' Behaviour is influenced by their Risk Tolerance and Degree of Trust in the system. Risk tolerance is classified into Risk-seeking, Risk-averse, and Risk-neutral agents. Dynamic risk tolerance means it can change based on factors like resource availability, while Static tolerance remains constant.
+Categorised into Human Agents (e.g., building occupants) and Components (e.g., devices, robots, or software). Components vary by Type and Controllability, with controllable ones being directly managed and uncontrollable ones being influenced by external factors. In uncertain environments, agent Behaviour is shaped by Risk Tolerance (risk-seeking, risk-averse, or risk-neutral) and Trust in the system. Risk tolerance can be Dynamic, adjusting based on conditions like resource availability, or Static, remaining unchanged.
 
 **Constrains**
 
-classified into four types: Physical, Ordering, Well-being, and Economic. Physical Constraints relate to space and time, defining how agents and actions interact spatially and temporally. These can be represented abstractly or purely, considering geometric laws and physical properties. Ordering Constraints govern the sequence and concurrency of objectives, tasks, or actions, such as the prioritization or required timing between actions. Well-being Constraints focus on regulations and policies aimed at enhancing user comfort, privacy, health, and safety. Finally, Economic Constraints are concerned with the financial costs of actions, such as limits on energy consumption. These constraints may overlap, with well-being constraints, for instance, restricting the number of people or components in a given space or time.
+Classified into Physical, defining spatial and temporal interactions based on geometric laws; Ordering, regulating the sequence and concurrency of objectives, tasks, or actions; Well-being, ensuring compliance with regulations that enhance comfort, privacy, health, and safety; and Economic, managing financial limitations like energy consumption. These constraints may overlap, such as well-being constraints imposing restrictions on space or resource usage.
 
 **Qualities**
 
-Includes aspects like Robustness, which measures how adaptable the system is to changes, covering efficiency, scalability, and resilience. Compliance with Requirements ensures the system meets the domain’s needs, including coverage, completeness, accuracy, and adequacy. Specificities reflect how well the system represents the domain’s uniqueness and its ability to generalise to other problems. Maintainability concerns how easily the domain model can be modified, with a focus on modularity, well-defined boundaries, and minimal dependencies. Explainability addresses how understandable the system’s behaviour and knowledge are to non-experts. The Physical aspect ensures accessibility and availability for interpretation and future validation, while Pragmatic focuses on post-design analysis to uncover missing requirements. Finally, Operationality deals with the system's ability to generate efficient plans using limited resources, emphasising the quality and speed of plan generation.
+Include aspects like Robustness, ensuring adaptability to changes through efficiency, scalability, and resilience; Compliance with Requirements, guaranteeing coverage, completeness, accuracy, and adequacy; and Specificities, reflecting domain uniqueness and generalisability. Maintainability focuses on modularity, well-defined boundaries, and minimal dependencies for easy modifications. Explainability enhances the system’s interpretability for non-experts, while the Physical aspect ensures accessibility for validation. Pragmatic analysis identifies missing requirements post-design, and Operationality optimises plan generation efficiency, balancing quality and computational constraints.
 
 
 ## Innovative Aspects
 
+D2F highlights some aspects that are simplified and/or neglected in the literature of AI planning:
+
+- **Uncertainty and Risk:** Key aspects that characterise the inherently non-deterministic real-world planning domains.
+- **Trust:** A fundamental consideration in all phases of AI planning system development, representing the confidence agents place in the system's ability to make reliable and right decisions.
 
 
 ## Core Features
 
 - **Adaptability:** Select realistic aspects based on the specific needs of planning domains and AI planning systems.
 - **Transparency:** Develop AI planning systems and AI planning domains based on a common and inclusive notion of domain realism.
-- **Scalability:**
+- **Scalability:** Adjust the level of realistic aspects granularity to align with the domain's specific requirements.
 
 
 ## Engagement and Contribution
@@ -55,6 +61,10 @@ Includes aspects like Robustness, which measures how adaptable the system is to 
 Your expertise and insights are essential to the ongoing development of D2F. Whether employed in industrial applications or academic research, sharing your experiences will contribute to the enhancement of D2F for the broader community.
 
 - **For industrial applications:** We invite you to share how D2F has been integrated and adapted within your projects.
-- **For academic research:** If you have utilised D2F in your research, kindly reference the following paper:
+- **For academic research:** If you have utilised D2F in your research, kindly reference the following papers:
 
-   [1] Alnazer, E., Georgievski, I. (2023). Understanding Real-World AI Planning Domains: A Conceptual Framework. In: Aiello, M., Barzen, J., Dustdar, S., Leymann, F. (eds) Service-Oriented Computing. SummerSOC 2023. Communications in Computer and Information Science, vol 1847. Springer, Cham.
+  [1] Alnazer, E., Georgievski, I. (2023). Understanding Real-World AI Planning Domains: A Conceptual Framework. In: Aiello, M., Barzen, J., Dustdar, S., Leymann, F. (eds) Service-Oriented Computing. SummerSOC 2023. Communications in Computer and Information Science, vol 1847. Springer, Cham.
+
+  [2] Georgievski, I. (2023). Software Development Life Cycle for Engineering AI Planning Systems. In ICSOFT (pp. 751-760).
+
+  [3] Georgievski, I. (2023). Conceptualising software development lifecycle for engineering AI planning systems. In 2023 IEEE/ACM 2nd International Conference on AI Engineering–Software Engineering for AI (CAIN) (pp. 88-89). IEEE.
