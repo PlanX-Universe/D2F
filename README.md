@@ -1,5 +1,5 @@
 # D2F
-Welcome to D2F, a conceptual framework that identifies and categorises the aspects of real-world planning domains in varying levels of granularity. D2F is developed with the ambition to provide guidance to knowledge engineers and software engineers in the process of designing, identifying, and categorising realistic and relevant aspects that characterise real-world application domains and are crucial to the development of AI planning systems in all phases [2]. The conceptual framework organises the realistic aspects into seven main categories and seven levels of granularity across these levels with the relations between them.
+Welcome to Domain Features Framework (D2F), a conceptual framework that identifies and categorises the aspects of real-world planning domains in varying levels of granularity. D2F is developed with the ambition to provide guidance to knowledge engineers and software engineers in the process of designing, identifying, and categorising realistic and relevant aspects that characterise real-world application domains and are crucial to the development of AI planning systems in all phases. The conceptual framework organises the realistic aspects into seven main categories and seven levels of granularity across these levels with the relations between them.
 
 D2F conceptualises planning domains' realism, provides a common and inclusive notion of AI domain model realism, drives the development of AI planning techniques, can improve the applicability of AI planning, and offers means for comparing different AI planning systems.
 
@@ -7,38 +7,39 @@ D2F conceptualises planning domains' realism, provides a common and inclusive no
 ## The Seven Categories and their Subcategories
 
 <p align="center">
-  <img width="600" height="350" src="https://github.com/user-attachments/assets/7ba8de5a-fa27-4fb0-bdd0-be4190490847")
+  <img width="650" height="400" src="https://github.com/user-attachments/assets/d08bf607-72cc-4328-82f0-0a7ac7038208")
 >
 </p>
 
 
+
 **Objectives**
 
-Categorised by Types (Soft Goals, i.e., Preferences or Hard Goals, i.e., Requests) and Granularity (Subgoals or broader goals). Goals can be Qualitative (e.g., improving comfort) or Quantitative (e.g., minimising costs) and may focus on Optimisation (finding the best solution) or Satisfaction (meeting thresholds).
+Categorised by _Types_ (_Soft Goals_, i.e., _Preferences_ or _Hard Goals_, i.e., _Requests_) and _Granularity_ (_Subgoals_ or broader _Goals_). Goals can be _Qualitative_ (e.g., improving comfort) or _Quantitative_ (e.g., minimising costs) and may focus on _Optimisation_ (finding the best solution) or _Satisfaction_ (meeting thresholds).
 
 **Tasks**
 
- Divided into Complexity and Properties of Relations. Complexity differentiates between Actions (simple, direct tasks) and Complex Tasks (requiring refinement into subtasks). Properties of Relations include Abstraction Levels (different refinement levels), Structured Causality (causal links between tasks), Recursion (iterative task refinement), Alternatives (multiple ways to achieve a task), and Conditions (requirements for specific refinements). These properties define how tasks interact and evolve to achieve domain-specific goals.
+ Divided into _Complexity_ and _Properties of Relations_. _Complexity_ differentiates between _Actions_ (simple, direct tasks) and _Complex Tasks_ (requiring refinement into subtasks). _Properties of Relations_ include _Abstraction Levels_ (different refinement levels), _Structured Causality_ (causal links between tasks), _Recursion_ (iterative task refinement), _Alternatives_ (multiple ways to achieve a task), and _Conditions_ (requirements for specific refinements). These properties define how tasks interact and evolve to achieve domain-specific goals.
 
 **Quantities**
 
-Classified by Type and Computation. Types include Resources (limits on consumption like money or energy), Action Costs (resources consumed by actions), and Environmental Inputs (measurable characteristics of the domain, like temperature or energy demand). Computation involves determining quantities using either Linear or Non-linear functions, depending on the real-world concepts they represent.
+Classified by _Type_ and _Computation_. _Types_ include _Resources_ (limits on consumption like money or energy), _Action Costs_ (resources consumed by actions), and _Environmental Inputs_ (measurable characteristics of the domain, like temperature or energy demand). _Computation_ involves determining quantities using either _Linear_ or _Non-linear_ functions, depending on the real-world concepts they represent.
 
 **Determinism**
 
-Planning domains are categorised into Deterministic or Non-deterministic. In deterministic domains, conditions are fully observable, actions have predefined consequences and costs, and outcomes are predictable. Non-deterministic domains vary based on their Source, Randomness, and Consequences. Sources can be Internal (e.g., agent malfunctions) or External (e.g., environmental variability). Randomness can be Regular (predictable patterns) or Totally Random (unpredictable events). Consequences include Partial Observability (limited knowledge of conditions) and Action Contingencies (uncertain effects or costs). Non-determinism introduces Risk (known probabilities) or Uncertainty (unknown probabilities), influencing decision-making.
+Planning domains are categorised into _Deterministic_ or _Non-deterministic_. In _Deterministic_ domains, conditions are fully observable, actions have predefined consequences and costs, and outcomes are predictable. _Non-deterministic_ domains vary based on their _Source_, _Randomness_, and _Consequences_. _Sources_ can be _Internal_ (e.g., agent malfunctions) or _External_ (e.g., environmental variability). _Randomness_ can be _Regular_ (predictable patterns) or _Totally Random_ (unpredictable events). _Consequences_ include _Partial Observability_ (limited knowledge of conditions) and _Action Contingencies_ (uncertain effects or costs). _Non-determinism_ introduces _Risk_ (known probabilities) or _Uncertainty_ (unknown probabilities), influencing decision-making.
 
 **Agents**
 
-Categorised into Human Agents (e.g., building occupants) and Components (e.g., devices, robots, or software). Components vary by Type and Controllability, with controllable ones being directly managed and uncontrollable ones being influenced by external factors. In uncertain environments, agent Behaviour is shaped by Risk Tolerance (risk-seeking, risk-averse, or risk-neutral) and Trust in the system. Risk tolerance can be Dynamic, adjusting based on conditions like resource availability, or Static, remaining unchanged.
+Categorised into _Human Agents_ (e.g., building occupants) and _Components_ (e.g., devices, robots, or software). _Components_ vary by _Type_ and _Controllability_, with _Controllable_ ones being directly managed and _Uncontrollable_ ones being influenced by external factors. In uncertain environments, agent _Behaviour_ is shaped by _Risk Tolerance_ (risk-seeking, risk-averse, or risk-neutral) and _Trust_ in the system. _Risk tolerance_ can be _Dynamic_, adjusting based on conditions like resource availability, or _Static_, remaining unchanged.
 
 **Constrains**
 
-Classified into Physical, defining spatial and temporal interactions based on geometric laws; Ordering, regulating the sequence and concurrency of objectives, tasks, or actions; Well-being, ensuring compliance with regulations that enhance comfort, privacy, health, and safety; and Economic, managing financial limitations like energy consumption. These constraints may overlap, such as well-being constraints imposing restrictions on space or resource usage.
+Classified into _Physical_, defining spatial and temporal interactions based on geometric laws; _Ordering_, regulating the sequence and concurrency of objectives, tasks, or actions; _Well-being_, ensuring compliance with regulations that enhance comfort, privacy, health, and safety; and _Economic_, managing financial limitations like energy consumption. These constraints may overlap, such as _Well-being_ constraints imposing restrictions on space or resource usage.
 
 **Qualities**
 
-Include aspects like Robustness, ensuring adaptability to changes through efficiency, scalability, and resilience; Compliance with Requirements, guaranteeing coverage, completeness, accuracy, and adequacy; and Specificities, reflecting domain uniqueness and generalisability. Maintainability focuses on modularity, well-defined boundaries, and minimal dependencies for easy modifications. Explainability enhances the system’s interpretability for non-experts, while the Physical aspect ensures accessibility for validation. Pragmatic analysis identifies missing requirements post-design, and Operationality optimises plan generation efficiency, balancing quality and computational constraints.
+Include aspects like _Robustness_, ensuring adaptability to changes through efficiency, scalability, and resilience; _Compliance with Requirements_, guaranteeing coverage, completeness, accuracy, and adequacy; and _Specificities_, reflecting domain uniqueness and generalisability. _Maintainability_ focuses on modularity, well-defined boundaries, and minimal dependencies for easy modifications. _Explainability_ enhances the system’s interpretability for non-experts, while the _Physical_ aspect ensures accessibility for validation. _Pragmatic_ analysis identifies missing requirements post-design, and _Operationality_ optimises plan generation efficiency, balancing quality and computational constraints.
 
 
 ## Innovative Aspects
