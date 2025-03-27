@@ -15,7 +15,7 @@ D2F conceptualises planning domains' realism, provides a common and inclusive no
 
 **Objectives**
 
-The planning goals the AI planning system is tasked to achieve. They are categorised by _Types_ (_Soft Goals_, i.e., _Preferences_ or _Hard Goals_, i.e., _Requests_) and _Granularity_ (_Subgoals_ or broader _Goals_). Goals can be _Qualitative_ (e.g., improving comfort) or _Quantitative_ (e.g., minimising costs) and may focus on _Optimisation_ (finding the best solution) or _Satisfaction_ (meeting thresholds).
+The planning goals that the AI planning system is tasked to achieve. They are categorised by _Types_ (_Soft Goals_, i.e., _Preferences_ or _Hard Goals_, i.e., _Requests_) and _Granularity_ (_Subgoals_ or broader _Goals_). Goals can be _Qualitative_ (e.g., improving comfort) or _Quantitative_ (e.g., minimising costs) and may focus on _Optimisation_ (finding the best solution) or _Satisfaction_ (meeting thresholds).
 
 **Tasks**
 
@@ -31,7 +31,7 @@ The extent to which conditions and action outcomes are predictable in the planni
 
 **Agents**
 
-The performers of actions in AI planning systems. They are categorised into _Human Agents_ (e.g., building occupants) and _Components_ (e.g., devices, robots, or software). _Components_ vary by _Type_ and _Controllability_, with _Controllable_ ones being directly managed and _Uncontrollable_ ones being influenced by external factors. In uncertain environments, agent _Behaviour_ is shaped by _Risk Tolerance_ (risk-seeking, risk-averse, or risk-neutral) and _Trust_ in the system. _Risk tolerance_ can be _Dynamic_, adjusting based on conditions like resource availability, or _Static_, remaining unchanged.
+The performers of actions in the AI planning system. They are categorised into _Human Agents_ (e.g., building occupants) and _Components_ (e.g., devices, robots, or software). _Components_ vary by _Type_ and _Controllability_, with _Controllable_ ones being directly managed and _Uncontrollable_ ones being influenced by external factors. In uncertain environments, agent _Behaviour_ is shaped by _Risk Tolerance_ (risk-seeking, risk-averse, or risk-neutral) and _Trust_ in the system. _Risk tolerance_ can be _Dynamic_, adjusting based on conditions like resource availability, or _Static_, remaining unchanged.
 
 **Constrains**
 
@@ -39,7 +39,7 @@ The limitations or restrictions that govern the behaviour of actions, resources,
 
 **Qualities**
 
-Essential characteristics that the planning domain and the overall planning system should exhibit. They include aspects like _Robustness_, ensuring adaptability to changes through efficiency, scalability, and resilience; _Compliance with Requirements_, guaranteeing coverage, completeness, accuracy, and adequacy; and _Specificities_, reflecting domain uniqueness and generalisability. _Maintainability_ focuses on modularity, well-defined boundaries, and minimal dependencies for easy modifications. _Explainability_ enhances the system’s interpretability for non-experts, while the _Physical_ aspect ensures accessibility for validation. _Pragmatic_ analysis identifies missing requirements post-design, and _Operationality_ optimises plan generation efficiency, balancing quality and computational constraints.
+Essential characteristics that the planning domain and the overall planning system, including all its elements, should exhibit. They include aspects like _Robustness_, ensuring adaptability to changes through efficiency, scalability, and resilience; _Compliance with Requirements_, guaranteeing coverage, completeness, accuracy, and adequacy; and _Specificities_, reflecting domain uniqueness and generalisability. _Maintainability_ focuses on modularity, well-defined boundaries, and minimal dependencies for easy modifications. _Explainability_ enhances the system’s interpretability for non-experts, while the _Physical_ aspect ensures accessibility for validation. _Pragmatic_ analysis identifies missing requirements post-design, and _Operationality_ optimises plan generation efficiency, balancing quality and computational constraints.
 
 
 ## Innovative Aspects
