@@ -15,31 +15,31 @@ D2F conceptualises planning domains' realism, provides a common and inclusive no
 
 **Objectives**
 
-Categorised by _Types_ (_Soft Goals_, i.e., _Preferences_ or _Hard Goals_, i.e., _Requests_) and _Granularity_ (_Subgoals_ or broader _Goals_). Goals can be _Qualitative_ (e.g., improving comfort) or _Quantitative_ (e.g., minimising costs) and may focus on _Optimisation_ (finding the best solution) or _Satisfaction_ (meeting thresholds).
+The planning goals the AI planning system is tasked to achieve. They are categorised by _Types_ (_Soft Goals_, i.e., _Preferences_ or _Hard Goals_, i.e., _Requests_) and _Granularity_ (_Subgoals_ or broader _Goals_). Goals can be _Qualitative_ (e.g., improving comfort) or _Quantitative_ (e.g., minimising costs) and may focus on _Optimisation_ (finding the best solution) or _Satisfaction_ (meeting thresholds).
 
 **Tasks**
 
- Divided into _Complexity_ and _Properties of Relations_. _Complexity_ differentiates between _Actions_ (simple, direct tasks) and _Complex Tasks_ (requiring refinement into subtasks). _Properties of Relations_ include _Abstraction Levels_ (different refinement levels), _Structured Causality_ (causal links between tasks), _Recursion_ (iterative task refinement), _Alternatives_ (multiple ways to achieve a task), and _Conditions_ (requirements for specific refinements). These properties define how tasks interact and evolve to achieve domain-specific goals.
+The activities performed in the application domain. They are divided into _Complexity_ and _Properties of Relations_. _Complexity_ differentiates between _Actions_ (simple, direct tasks) and _Complex Tasks_ (requiring refinement into subtasks). _Properties of Relations_ include _Abstraction Levels_ (different refinement levels), _Structured Causality_ (causal links between tasks), _Recursion_ (iterative task refinement), _Alternatives_ (multiple ways to achieve a task), and _Conditions_ (requirements for specific refinements). These properties define how tasks interact and evolve to achieve domain-specific goals.
 
 **Quantities**
 
-Classified by _Type_ and _Computation_. _Types_ include _Resources_ (limits on consumption like money or energy), _Action Costs_ (resources consumed by actions), and _Environmental Inputs_ (measurable characteristics of the domain, like temperature or energy demand). _Computation_ involves determining quantities using either _Linear_ or _Non-linear_ functions, depending on the real-world concepts they represent.
+Measurable values that represent various attributes of resources, actions, and environmental factors relevant to the domain. They are classified by _Type_ and _Computation_. _Types_ include _Resources_ (limits on consumption like money or energy), _Action Costs_ (resources consumed by actions), and _Environmental Inputs_ (measurable characteristics of the domain, like temperature or energy demand). _Computation_ involves determining quantities using either _Linear_ or _Non-linear_ functions, depending on the real-world concepts they represent.
 
 **Determinism**
 
-Planning domains are categorised into _Deterministic_ or _Non-deterministic_. In _Deterministic_ domains, conditions are fully observable, actions have predefined consequences and costs, and outcomes are predictable. _Non-deterministic_ domains vary based on their _Source_, _Randomness_, and _Consequences_. _Sources_ can be _Internal_ (e.g., agent malfunctions) or _External_ (e.g., environmental variability). _Randomness_ can be _Regular_ (predictable patterns) or _Totally Random_ (unpredictable events). _Consequences_ include _Partial Observability_ (limited knowledge of conditions) and _Action Contingencies_ (uncertain effects or costs). _Non-determinism_ introduces _Risk_ (known probabilities) or _Uncertainty_ (unknown probabilities), influencing decision-making.
+The extent to which conditions and action outcomes are predictable in the planning domain. Planning domains are categorised into _Deterministic_ or _Non-deterministic_. In _Deterministic_ domains, conditions are fully observable, actions have predefined consequences and costs, and outcomes are predictable. _Non-deterministic_ domains vary based on their _Source_, _Randomness_, and _Consequences_. _Sources_ can be _Internal_ (e.g., agent malfunctions) or _External_ (e.g., environmental variability). _Randomness_ can be _Regular_ (predictable patterns) or _Totally Random_ (unpredictable events). _Consequences_ include _Partial Observability_ (limited knowledge of conditions) and _Action Contingencies_ (uncertain effects or costs). _Non-determinism_ introduces _Risk_ (known probabilities) or _Uncertainty_ (unknown probabilities), influencing decision-making.
 
 **Agents**
 
-Categorised into _Human Agents_ (e.g., building occupants) and _Components_ (e.g., devices, robots, or software). _Components_ vary by _Type_ and _Controllability_, with _Controllable_ ones being directly managed and _Uncontrollable_ ones being influenced by external factors. In uncertain environments, agent _Behaviour_ is shaped by _Risk Tolerance_ (risk-seeking, risk-averse, or risk-neutral) and _Trust_ in the system. _Risk tolerance_ can be _Dynamic_, adjusting based on conditions like resource availability, or _Static_, remaining unchanged.
+The performers of actions in AI planning systems. They are categorised into _Human Agents_ (e.g., building occupants) and _Components_ (e.g., devices, robots, or software). _Components_ vary by _Type_ and _Controllability_, with _Controllable_ ones being directly managed and _Uncontrollable_ ones being influenced by external factors. In uncertain environments, agent _Behaviour_ is shaped by _Risk Tolerance_ (risk-seeking, risk-averse, or risk-neutral) and _Trust_ in the system. _Risk tolerance_ can be _Dynamic_, adjusting based on conditions like resource availability, or _Static_, remaining unchanged.
 
 **Constrains**
 
-Classified into _Physical_, defining spatial and temporal interactions based on geometric laws; _Ordering_, regulating the sequence and concurrency of objectives, tasks, or actions; _Well-being_, ensuring compliance with regulations that enhance comfort, privacy, health, and safety; and _Economic_, managing financial limitations like energy consumption. These constraints may overlap, such as _Well-being_ constraints imposing restrictions on space or resource usage.
+The limitations or restrictions that govern the behaviour of actions, resources, or conditions in the application domain. They are classified into _Physical_, defining _Spatial_ and _Temporal_ interactions based on geometric laws; _Ordering_, regulating the sequence and concurrency of _Objectives_, _Tasks_, or _Durative Actions_; _Well-being_, ensuring compliance with _Regulations_, _Standards_, and _Policies_ that enhance _Comfort_, _Privacy_, _Health_, and _Safety_; and _Economic_, managing financial limitations like energy consumption. These constraints may overlap, such as _Well-being_ constraints imposing restrictions on space or resource usage.
 
 **Qualities**
 
-Include aspects like _Robustness_, ensuring adaptability to changes through efficiency, scalability, and resilience; _Compliance with Requirements_, guaranteeing coverage, completeness, accuracy, and adequacy; and _Specificities_, reflecting domain uniqueness and generalisability. _Maintainability_ focuses on modularity, well-defined boundaries, and minimal dependencies for easy modifications. _Explainability_ enhances the system’s interpretability for non-experts, while the _Physical_ aspect ensures accessibility for validation. _Pragmatic_ analysis identifies missing requirements post-design, and _Operationality_ optimises plan generation efficiency, balancing quality and computational constraints.
+Essential characteristics that the planning domain and the overall planning system should exhibit. They include aspects like _Robustness_, ensuring adaptability to changes through efficiency, scalability, and resilience; _Compliance with Requirements_, guaranteeing coverage, completeness, accuracy, and adequacy; and _Specificities_, reflecting domain uniqueness and generalisability. _Maintainability_ focuses on modularity, well-defined boundaries, and minimal dependencies for easy modifications. _Explainability_ enhances the system’s interpretability for non-experts, while the _Physical_ aspect ensures accessibility for validation. _Pragmatic_ analysis identifies missing requirements post-design, and _Operationality_ optimises plan generation efficiency, balancing quality and computational constraints.
 
 
 ## Innovative Aspects
@@ -48,13 +48,17 @@ D2F highlights some aspects that are simplified and/or neglected in the literatu
 
 - **Uncertainty and Risk:** Key aspects that characterise the inherently non-deterministic real-world planning domains.
 - **Trust:** A fundamental consideration in all phases of AI planning system development, representing the confidence agents place in the system's ability to make reliable and right decisions.
+- **Engineering Guidance:** Support for knowledge engineers and software engineers in the process of designing, identifying, and categorising realistic aspects required for the development process.
+- **Categorisation:** Organisation of a broad range of realistic aspects in several abstraction levels.
 
 
 ## Core Features
 
-- **Adaptability:** Select realistic aspects based on the specific needs of planning domains and AI planning systems.
-- **Transparency:** Develop AI planning systems and AI planning domains based on a common and inclusive notion of domain realism.
-- **Scalability:** Adjust the level of realistic aspects granularity to align with the domain's specific requirements.
+- **Real-World Impact:** Impact the design, development, and applicability of AI planning systems in real-world settings by supporting software engineers and knowledge engineers in identifying key aspects of real-world planning problems.
+- **Comprehensiveness:** Provide a broad range of planning features suitable for real-world planning domains.
+- **Customisability:** Enable the selection of realistic aspects based on the specific needs of planning domains and AI planning systems.
+- **Transparency:** Support transparency by providing common and inclusive terminology and a notion of domain realism for developing AI planning systems and AI planning domains.
+- **Abstraction:** Enable adjusting the level of realistic aspects granularity to align with the domain's specific requirements.
 
 
 ## Engagement and Contribution
